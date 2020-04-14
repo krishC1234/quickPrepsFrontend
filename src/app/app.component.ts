@@ -13,6 +13,7 @@ export class AppComponent {
 
   //method
   public constructor(public logger: Logger) {
+    //This is the logger method
     this.logger.logInfo("App Component constructor is called");
   }
 }
