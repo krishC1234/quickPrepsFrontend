@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top container-fluid">
+  <div class="container">
+    <a class="navbar-brand m-1" href="#">QuickPreps</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link mr-4" [routerLink]="['/']">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown mr-2">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            CS Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/courses/html']">HTML</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/courses/css']">CSS</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/courses/javascript']">Javascript</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/courses/sql']">Oracle SQL</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Subject/AP Tests
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/tests/book']">AP Computer Science</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">AP Physics 1</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">AP Calculus</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">SAT 2 Math</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">Physics SAT</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">Biology SAT</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Programming Tests
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/tests/book']">HTML</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">CSS</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">Javascript</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/tests/book']">SQL</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/tests/start']" id="navbarDropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">
+            Resume a test
+          </a>
+        </li>
+
+        <li class="nav-item mx-2">
+          <a class="nav-link" [routerLink]="['/blog']">Forum</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

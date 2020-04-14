@@ -1,0 +1,56 @@
+<ngx-spinner></ngx-spinner>
+<button [routerLink]="['/question/list']">Questions</button>
+
+<div class="form">
+  <h1 class="mx-auto">Update a Question</h1>
+
+
+  <div class="card w-50 mx-auto">
+    <input class="input-group-text" [(ngModel)]="question.question" name="question.question"
+      placeholder="Enter new question">
+
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <img height="200px" width="200px" src="{{question.image}}">
+        &nbsp;
+        <label class="col-form-label mr-1">Image</label>
+        <input style="display: none" type="file" (change)="onFileChanged($event, false)" #fileInput1>
+        <button (click)="fileInput1.click()" class="btn btn-warning">Upload File</button>
+      </div>
+    </div>
+
+    <div class="btn-group w-50">
+      <button type="button" class="btn btn-success" aria-haspopup="true" aria-expanded="false">
+        Type of Question
+        <select class="select" [(ngModel)]="question.type" name="question.type">
+          <option  value="Math SAT 2">Math SAT 2</option>
+          <option  value="Physics SAT">Physics SAT</option>
+          <option  value="Biology SAT">Biology SAT</option>
+          <option  value="US History SAT">US History SAT</option>
+          <option  value="AP Stats">AP Stats</option>
+          <option  value="AP Biology">AP Biology</option>
+          <option  value="AP Physics 1">AP Physics 1</option>
+          <option  value="SQL">SQL</option>
+          <option  value="Javascript">Javascript</option>
+          <option  value="HTML/CSS">HTML/CSS </option> </select> </button> <div>
+            <div class="input-group-text mx-auto">
+              <input class="input-group-text" [(ngModel)]="question.optionA" id="1">
+              <label class="form-check-label" placeholder="Enter optionA"></label>
+            </div>
+            <div class="input-group-text mx-auto">
+              <input class="input-group-text" [(ngModel)]="question.optionB">
+            </div>
+            <div class="input-group-text mx-auto">
+              <input class="input-group-text" [(ngModel)]="question.optionC">
+            </div>
+            <div class="input-group-text mx-auto">
+              <input class="input-group-text" [(ngModel)]="question.optionD">
+            </div>
+            <div class="input-group-text mx-auto">
+              <input class="input-group-text" [(ngModel)]="question.answer">
+            </div>
+    </div>
+
+  </div>
+  <button class="btn btn-primary w-50 mx-auto" (click)="update()">Submit</button>
+</div>

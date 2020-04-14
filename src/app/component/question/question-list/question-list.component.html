@@ -1,0 +1,22 @@
+<ngx-spinner></ngx-spinner>
+<div class="bgBlue">
+  <h1 class="text-center">Question List</h1>
+  <button [routerLink]="['/question/create']" class="btn-primary m-1">Create a question</button>
+  <button type="button" class="btn btn-success" aria-haspopup="true" aria-expanded="false">
+    Type of Question
+    <select class="select" [(ngModel)]="type" name="type">
+      <option  value="Math SAT 2">Math SAT 2</option>
+      <option  value="Physics SAT">Physics SAT</option>
+      <option  value="Biology SAT">Biology SAT</option>
+      <option  value="US History SAT">US History SAT</option>
+      <option  value="AP Stats">AP Stats</option>
+      <option  value="AP Biology">AP Biology</option>
+      <option  value="AP Physics 1">AP Physics 1</option>
+      <option  value="SQL">SQL</option>
+      <option  value="Javascript">Javascript</option>
+      <option  value="HTML/CSS">HTML/CSS </option> </select> </button> <button (click)="filter()"
+        class="btn btn-primary m-1">Filter</button>
+  <p>{{numQuestions}} Questions</p>
+  <app-question-unit *ngFor="let item of questions" [question]="item" [routerLink]="['/question/type']">
+  </app-question-unit>
+</div>

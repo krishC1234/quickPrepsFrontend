@@ -1,0 +1,10 @@
+<div class="card m-1" style="width: 18rem;" [class.bgGreen]="todo.isComplete" [class.bgOrange]="!todo.isComplete">
+  <div class="card-body">
+    <p>{{todo.task}}</p>
+    <p>{{todo.createdAt | date:'yyyy-MM-dd-mm-ss'}}</p>
+    <button class="btn btn-primary" (click)="createSince()">Created Since</button>
+    <p>Created {{diffDays}} days, {{diffMins | number}} minutes ago</p>
+    <button class="btn btn-warning m-1" [routerLink]="['/todo/update', todo._id]">Click to Update Todo</button>
+    <button class="btn btn-danger m-1" [routerLink]="['/todo/delete', todo._id]">Click to Delete Todo</button>
+  </div>
+</div>

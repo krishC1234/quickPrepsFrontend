@@ -1,0 +1,18 @@
+<ngx-spinner></ngx-spinner>
+<div data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Delete</h2>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Are you sure you want to delete the item with id: {{id}}</p>
+        <br>
+        <div>
+          <button class="btn-primary col-2 float-left" (click)="delete()">Yes</button>
+          <button [routerLink]="['/question/list']" class="btn-danger float-right col-2">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

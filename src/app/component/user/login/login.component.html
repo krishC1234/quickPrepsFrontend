@@ -1,0 +1,17 @@
+<ngx-spinner></ngx-spinner>
+<form>
+  <h1 class="card-header text-center">Login</h1>
+  <div class="form-group col-6 justify-content-center">
+    <label for="exampleInputEmail1">Mobile Number</label>
+    <input class=" mt-1 form-control" [(ngModel)]="model.mobile" type="text" name="model.mobile"
+      placeholder="Enter mobile number">
+    <label for="exampleInputEmail1" class="mt-2">Password</label>
+    <input class="form-control " [(ngModel)]="model.password" type="password" name="model.password"
+      placeholder="Enter password">
+    <button type="submit" class=" mt-4 btn-primary " (click)="login()">Login</button>
+    <div>
+      <span>New user?</span>
+      <a [routerLink]="['/register']"> Register</a>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,147 @@
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
+
+      <h1 class="my-4 text-center" style="font-size: 80px; color:darkturquoise">Oracle SQL Course
+      </h1>
+      <hr>
+
+      <!-- Blog Post -->
+      <div class="card mb-4">
+        <video height="300" controls>
+          <source src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/sqlLesson1.mp4 " type="video/mp4">
+        </video>
+
+        <div class="card-body">
+          <h2 class="card-title"><strong>SQL- Lesson 1</strong></h2>
+          <p class="card-text">In this lesson we will also go over the fundamentals of SQL in a database. Specifically,
+            we will cover what a database is, what queries are, and how to retrieve
+            data from the database. The assignment will be
+            running
+            basic sql queries to read data from an oracle databse.</p>
+        </div>
+        <div class="card-footer text-muted">
+          Posted on April 5, 2020 by
+          <a>Quickpreps</a>
+        </div>
+      </div>
+
+      <!-- Blog Post -->
+      <div class="card mb-4">
+        <video height="300" controls>
+          <source src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/SqlLesson2.mp4" type="video/mp4">
+        </video>
+
+        <div class="card-body">
+          <h2 class="card-title"><strong>SQL- Lesson 2</strong></h2>
+          <p class="card-text">In this lesson we'll be installing the SQL plus and SQL developer tools, so that you can
+            enter a SQL statement, such as SELECT. Speciifcally well be going over step by step instructions to walk you
+            through the process. The homework will be installing the tools on your computer, and then reading given
+            documentation. </p>
+          <p>SQL Developer Link: <a href="https://www.oracle.com/database/technologies/appdev/sql-developer.html">
+              https://www.oracle.com/database/technologies/appdev/sql-developer.html</a></p>
+          <p>SQL Client Plus: <a
+              href="https://www.oracle.com/database/technologies/instant-client.html">https://www.oracle.com/database/technologies/instant-client.html</a>
+          </p>
+        </div>
+        <div class="card-footer text-muted">
+          Posted on April 6, 2020 by
+          <a>Quickpreps</a>
+        </div>
+      </div>
+
+      <!-- Blog Post -->
+      <div class="card mb-4">
+        <video height="300" controls>
+          <source src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/sqlLesson3.mp4" type="video/mp4">
+        </video>
+
+        <div class="card-body">
+          <h2 class="card-title"><strong>SQL- Lesson 3</strong></h2>
+          <p class="card-text">In Lesson 3 we will be learning about SID and services, logging into
+            SQL developer, connection strings, and how to access SQL plus from command prompt on the windows prompt. The
+            homework is connecting to the databse, and to practice with the desc and select commands.
+          </p>
+        </div>
+        <div class="card-footer text-muted">
+          Posted on April 7, 2020 by
+          <a>Quickpreps</a>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <video height="300" controls>
+          <source src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/SQL-Lesson4.mp4" type="video/mp4">
+        </video>
+
+        <div class="card-body">
+          <h2 class="card-title"><strong>SQL- Lesson 4</strong></h2>
+          <p class="card-text">In lesson 4 we will be talking about the four DML statement, whcih are very important to
+            edit databases. We'll also talk about creating users and granting them different privleges. The homework
+            will be to practice with different commands we have given.
+          </p>
+        </div>
+        <div class="card-footer text-muted">
+          Posted on April 10, 2020 by
+          <a>Quickpreps</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+      <!-- Search Widget -->
+
+      <!-- Categories Widget -->
+      <div class="mt-5 card my-4">
+        <h5 class="card-header">Tutorials for</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a [routerLink]="['/courses/html']">HTML</a>
+                </li>
+                <li>
+                  <a [routerLink]="['/courses/css']">CSS</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a [routerLink]="['/courses/javascript']">Javascript</a>
+                </li>
+                <li>
+                  <a>SQL</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Widget -->
+      <div class="card my-4 mt-5">
+        <h5 class="card-header">Test your new knowledge!</h5>
+        <div class="card-body">
+          Take a test to see your progress in the course. Questions from the test are based off the
+          actual certification exam questions and will also test you on what you've learned throughout the courses.
+          There are around 20 questions per test.
+        </div>
+        <div class="btn btn-primary mb-2 w-50 d-block mx-auto" [routerLink]="['/tests/book']">Take a Test</div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

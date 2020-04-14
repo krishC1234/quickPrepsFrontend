@@ -1,0 +1,76 @@
+<!-- Masthead-->
+<header class="masthead text-white text-center" style="background-color: #1abc9c;">
+  <div class="container d-flex align-items-center flex-column">
+    <!-- Masthead Heading-->
+    <h1 class="masthead-heading text-uppercase mb-0">QuickPrep Courses</h1>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+    </div>
+    <!-- Masthead Subheading-->
+    <p class="masthead-subheading font-weight-light mb-0">Learn how to become a professional web-designer</p>
+  </div>
+</header>
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+  <div class="container">
+    <!-- Portfolio Section Heading-->
+    <h1 class="page-section-heading text-center text-uppercase  mt-2"><strong>Courses</strong></h1>
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+      <div class="divider-custom-line" style="max-width: 50%;"></div>
+    </div>
+
+    <!-- Portfolio Grid Items-->
+    <div class="row">
+      <!-- Portfolio Item 1-->
+      <div class="col-md-6 col-lg-6 mb-5" [routerLink]="['/courses/html']">
+        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img class="img-fluid d-block mx-auto" style="max-height:200px;"
+            src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/HTML5.png" alt="" />
+          <h5 class="text-center" style="color:orange"><strong>HTML Course</strong></h5>
+        </div>
+      </div>
+      <!-- Portfolio Item 2-->
+      <div class="col-md-6 col-lg-6 mb-5">
+        <div class="portfolio-item mx-auto" [routerLink]="['/courses/css']" data-toggle="modal"
+          data-target="#portfolioModal2">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img class="img-fluid d-block mx-auto" style="max-height:200px;"
+            src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/css.png" alt="" />
+          <h5 class="text-center" style="color:orange;"><strong>CSS Course</strong></h5>
+        </div>
+      </div>
+      <!-- Portfolio Item 3-->
+      <div class="col-md-6 col-lg-6 mb-5">
+        <div class="portfolio-item mx-auto" data-toggle="modal" [routerLink]="['/courses/javascript']"
+          data-target="#portfolioModal3">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img class="img-fluid d-block mx-auto" style="max-height:200px;"
+            src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/javascript.jpg" alt="" />
+          <h5 class="text-center" style="color:orange"><strong>Javascript Course</strong></h5>
+        </div>
+      </div>
+      <!-- Portfolio Item 4-->
+      <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
+        <div class="portfolio-item mx-auto" data-toggle="modal" [routerLink]="['/courses/sql']"
+          data-target="#portfolioModal4">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img class="img-fluid d-block mx-auto" style="max-height:200px;"
+            src="https://test-newstein-portal-bucket.s3.us-east-2.amazonaws.com/sql.jpg" alt="" />
+          <h5 class="text-center" style="color:orange"><strong>SQL Course</strong></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

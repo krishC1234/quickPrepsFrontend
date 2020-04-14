@@ -1,0 +1,98 @@
+<!-- Modal -->
+
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Read below before you begin the test</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Save the test code below if you want to resume your test later on:
+          {{testId}}. </p>
+        <p>We have just sent you an email with the testId also.</p>
+        <p>You will be taking the full {{user.type}} test.</p>
+        <p>Good luck {{user.name}}.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="goTo()">Start {{user.type}}
+          Test</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main navigation -->
+<div class="container-fluid mt-3 mb-3">
+
+  <!-- Full Page Intro -->
+  <section
+    style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/90.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container py-5 my-5">
+
+        <h1 class="font-weight-bold text-center text-white pb-2">Create a Test</h1>
+
+        <!--Grid row-->
+        <div class="row d-flex align-items-center justify-content-center">
+          <!--Grid column-->
+          <div class="col-md-6 col-xl-5">
+            <!--Form-->
+            <div class="card">
+              <div class="card-body z-depth-2 px-4">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="email" class="form-control" [(ngModel)]="user.name" name="user.name"
+                    placeholder="Please enter your name">
+                  <small class="form-text text-muted">Please enter your name</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" [(ngModel)]="user.email" placeholder="Enter email"
+                    name="user.email">
+                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" [(ngModel)]="user.password" name="user.password"
+                    placeholder="Please enter your password">
+                  <small class="form-text text-muted">Remember your password: Only one password can be associated per
+                    email.</small>
+                </div>
+
+                <button type="button " class="btn btn-dark btn-block" aria-haspopup="true" aria-expanded="false">
+                  Type of Test
+                  <select class="select" [(ngModel)]="user.type" name="user.type">
+                    <option  value="Math SAT 2">Math SAT 2</option>
+                    <option  value="Physics SAT">Physics SAT</option>
+                    <option  value="Biology SAT">Biology SAT</option>
+                    <option  value="US History SAT">US History SAT</option>
+                    <option  value="AP Stats">AP Stats</option>
+                    <option  value="AP Biology">AP Biology</option>
+                    <option  value="AP Physics 1">AP Physics 1</option>
+                    <option  value="SQL">SQL</option>
+                    <option  value="Javascript">Javascript</option>
+                    <option  value="HTML/CSS">HTML/CSS </option> </select> </button> <button
+                      class="btn btn-info btn-block my-4" data-toggle="modal" data-target="#exampleModal"
+                      (click)="book()" type="submit">Create Test</button>
+              </div>
+            </div>
+            <!--/.Form-->
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </section>
+  <!-- Full Page Intro -->
+
+</div>
+<!-- Main navigation -->

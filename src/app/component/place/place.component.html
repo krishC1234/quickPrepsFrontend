@@ -1,0 +1,11 @@
+<div class="bgBlue">
+  <div *ngIf="pk">
+    <h1>{{ pk.title }}</h1>
+    <img style="width: 100%;
+    height: 100%;" src="{{ pk.imageUrl }}" />
+    <h4 class="text-danger">{{ pk.cost }}</h4>
+    <h5>{{ pk.description }}</h5>
+    <h6>{{ pk.review }}</h6>
+    <input type="text" [(ngModel)]="pk.title" name="pk.title">
+  </div>
+</div>

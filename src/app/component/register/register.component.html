@@ -1,0 +1,15 @@
+<div class="card">
+  <h1 class="card-header text-center">Register Now</h1>
+  <div class="form-group col-6 justify-content-center">
+    <label for="exampleInputEmail1">Email ID</label>
+    <input class=" mt-1 form-control" [(ngModel)]="registers.emailID" type="text" name="registers.email"
+      placeholder="Enter email ID">
+    <label for="exampleInputEmail1" class="mt-2">Password</label>
+    <input class="form-control " [(ngModel)]="registers.password" type="password" name="registers.password"
+      placeholder="Enter password">
+    <label for="exampleInputEmail1" class="mt-2">password Number</label>
+    <input class="form-control " [(ngModel)]="registers.passwordNo" type="text" name="registers.passwordNo"
+      placeholder="Enter password number">
+    <button type="submit" class=" mt-4 btn-primary " (click)="register()">Register</button>
+  </div>
+</div>

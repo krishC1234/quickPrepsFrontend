@@ -1,0 +1,18 @@
+<form *ngIf="todo">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter Task</label>
+    <input class="input-group-text m-1" [(ngModel)]="todo.task" name="todo.task" placeholder="Task goes here">
+  </div>
+  <select [(ngModel)]="todo.priority" name="todo.priority">
+     <option  value="P1">P1</option>
+    <option  value="P2">P2</option>
+    <option  value="P3">P3</option>
+    <option  value="P4">P4</option>
+    <option  value="P5">P5</option>
+  </select>
+  <div class="form-check">
+    <input type="checkbox" [(ngModel)]="todo.isComplete" name="todo.isComplete">
+    <label class="form-check-label" for="exampleCheck1">Is Complete</label>
+  </div>
+  <button class="btn" (click)="update()">New Data</button>
+</form>

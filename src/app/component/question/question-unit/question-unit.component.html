@@ -1,0 +1,8 @@
+<div class='list-group'>
+  <div class="list-group-item list-group-horizontal m-1">
+    <h4>{{question.question}}</h4>
+    <button class="bg-primary" [routerLink]="['/question/update', question._id]">Update</button>
+    <button class="bg-warning float-right" [routerLink]="['/question/delete', question._id]">Delete</button>
+    <h6 class="text-center">{{question.type}}</h6>
+  </div>
+</div>
